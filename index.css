@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-arabic: 'Tajawal', sans-serif;
+    --font-serif-en: 'Cinzel', serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    font-family: 'Tajawal', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #111113;
+    color: #f5f0e6;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #111113;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.font-mono-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Luxury Brushed Champagne Gold Text & Gradients */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f5e6c4 0%, #dfba73 35%, #c59b4c 70%, #e8cc8c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-metallic-bg {
+  background: linear-gradient(135deg, #e5c687 0%, #c59b4c 50%, #a87e33 100%);
+}
+
+.gold-metallic-bg:hover {
+  background: linear-gradient(135deg, #f0d59c 0%, #d4af37 50%, #b88c3e 100%);
+}
+
+/* Deep Walnut Architectural Wood Texture */
+.walnut-surface {
+  background-color: #1e140f;
+  background-image: 
+    radial-gradient(ellipse at 75% 30%, rgba(93, 64, 55, 0.28) 0%, transparent 60%),
+    repeating-linear-gradient(
+      92deg,
+      rgba(59, 39, 29, 0.35) 0px,
+      rgba(39, 26, 19, 0.5) 3px,
+      rgba(24, 15, 10, 0.65) 7px,
+      rgba(59, 39, 29, 0.35) 12px
+    );
+}
+
+.headline-balance {
+  text-wrap: balance;
+}
